@@ -1,0 +1,21 @@
+{
+  "name": "shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "nanoid": "^3.1.12",
+    "redis": "^3.0.2",
+    "uri-js": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

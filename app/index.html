@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acortador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+</head>
+<body style="background-color: #190048;" >
+    <div id="fondo" style="height:100vh">
+        <div class="row">
+            <div class="col s12 m8 offset-m2 blue lighten-5" style="margin-top: 35vh; border-radius: 0.6ch; padding: 2ch;">
+                <div class="col s12">
+                    <h6>Acortador de URL</h6>
+                    <input id="inputURL" id="link" type="text" class="validate" placeholder="Ej: https://www.google.com" >
+                    <span id="span1"></span>
+                    <span id="span2"></span>                    
+                    <button id="btnAcortar" class="waves-effect waves-light btn right">Acortar</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    
+    <!-- Canvas animation: -->
+    <script src="three.r119.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+        el: "#fondo",
+        mouseControls: false,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x950b8d,
+        backgroundColor: 0x190048,
+        points: 12.00,
+        maxDistance: 21.00
+        })
+    </script>
+</body>
+</html>
